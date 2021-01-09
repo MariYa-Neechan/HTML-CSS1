@@ -1,0 +1,227 @@
+/*----------------------------------------
+| 全体のスタイル
+----------------------------------------*/
+/*---フォント---*/
+html, body {
+    font-family: "游ゴシック";
+}
+
+/*----------------------------------------
+| ページ内　インナー
+----------------------------------------*/
+/*---横幅と中央揃え---*/
+.inr {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------
+| ヘッダー
+----------------------------------------*/
+/*---ヘッダー内の余白（上下,左右）---*/
+.page-header {
+    padding: 17px 0;
+}
+
+/* ロゴの横並び,X軸中央配置,先頭配置 */
+.page-header__inr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* インフォメーションの横並び,X軸中央配置,末尾配置 */
+.page-header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* お問合せボタンレイアウト*/
+.page-header-info__btn {
+    background-color: salmon;
+    color: #fff;
+}
+/* インフォメーション文字列　→マージン指定*/
+.page-header-info__txt {
+    margin-right: 40px;
+}
+
+/* 電話番号・受付時間をブロック */
+.page-header-info__txt span {
+    display: block;
+}
+
+/*----------------------------------------
+| メイン
+----------------------------------------*/
+/* キャッチコピー　背景画像設定 */
+.main-visual {
+    position: relative;
+    height: 480px;
+    background:left center no-repeat;
+    background-image: url("css_image/top2.png");
+    background-size: cover;
+}
+
+/* キャッチコピー　文字列設定 */
+.main-visual__ttl {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: black;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: "YuGothic", "游ゴシック";
+    transform: translate(-50%, -50%);
+}
+
+/* 帯のレイアウト */
+.section-header {
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    background: gray;
+    margin-bottom: 10px;
+}
+
+/* 帯の文字列設定 */
+.section-header__ttl {
+    color: #fff;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+  /* 帯の上部設定 */
+.intro-section__header {
+    margin-top: 50px;
+}
+
+  /* 丸囲いリスト　余白設定 */
+.intro-section__nav {
+    padding: 50px 0 50px;
+}
+
+  /* 丸囲いリスト　横並び,均等配置設定 */
+.intro-section__nav ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+ /* 丸囲いリスト　相対位置設定,リスト番号の非表示 */
+.intro-section__nav ol li {
+    position: relative;
+    list-style-type: none;
+}
+
+  /* 丸囲いリスト　文字列設定,囲い丸サイズ設定 */
+.intro-section__nav ol li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 230px;
+    height: 230px;
+    padding: 0 25px;
+    color: #000;
+    font-size: 25px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/* イントロセクション　各ブロック横並び設定 */
+.intro-section__block {
+    display: flex;
+    height: 400px;
+}
+
+.intro-section__block > * {
+    width: 50%;
+}
+
+/* ブロック配列が偶数番目の場合、文字列と画像を左右反転*/
+.intro-section__block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* 各画像を配置 */
+.intro-section__block:nth-child(1) .intro-section__img-area {
+    background-image: url("css_image/piano.png");
+}
+
+.intro-section__block:nth-child(2) .intro-section__img-area {
+    background-image: url("css_image/Vo.png");
+}
+
+.intro-section__block:nth-child(3) .intro-section__img-area {
+    background-image: url("css_image/Gt.png");
+}
+
+  /* 画像エリアの設定 */
+.intro-section__img-area {
+    background: center center no-repeat;
+    background-size: cover;
+}
+
+/* 文章エリア　背景レイアウト*/
+.intro-section__txt-area {
+    box-sizing: border-box;
+    color: #fff;
+    background-color: gray;
+}
+
+/* 文章 レッスン名サイズ設定*/
+.intro-section__txt-area h4 {
+    font-size: 25px;
+}
+
+  /* 文章　説明文サイズ */
+.intro-section__txt-area p {
+    font-size: 21px;
+}
+
+  /* お問合せ　余白設定 */
+.intro-section__contact {
+    padding: 100px 0;
+}
+
+  /* お問合せ　背景レイアウト */
+.contact-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 55px;
+    background: gray;
+}
+
+  /* お問合せ　文字列サイズ設定 */
+.contact-block__txt {
+    font-size: 28px;
+}
+
+.contact-block__txt span {
+    display: block;
+    font-size: 23px;
+}
+
+.contact-block__btn {
+    width: 370px;
+    padding: 20px 0;
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    background: salmon;
+}
+
+
+/*----------------------------------------
+| フッター
+----------------------------------------*/
+.page-footer {
+    padding: 40px 10px;
+    background-color: gray;
+}
+
+.page-footer small {
+    font-size: 15px;
+}
