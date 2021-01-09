@@ -1,0 +1,46 @@
+/* 【サイト名】レイアウト*/
+.title{
+    display: flex;
+    align-items: center;
+
+}
+
+.title img{
+    width: 200px;
+    border-radius: 50px;
+    /*transform: rotate(20deg);*/
+    margin: auto;
+    display: block;
+}
+
+.title img:hover{
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+h1{
+    background-color: coral;        /* 背景色*/
+    font-size: 50px;                  /* 文字サイズ*/
+    /*width: 15vw;                      /* 背景色の横幅*/
+    margin: auto;
+}
+
+/* 【aboutページはこちら～表下】レイアウト*/
+.box{
+    border-top: solid 5px black;    /*上　線種　太さ5px，黒色*/
+    border-bottom: solid 5px black; /*下　線種　太さ5px，黒色*/
+    padding-bottom: 1vw;              /*下　余白　1vw*/ 
+}
+
+/* 【image】レイアウト */
+.sample img{
+    width: 25%;
+}
+
+/*【【お問い合わせフォーム】レイアウト*/
+.infomation{
+    width: 25vw;
+    border: double 5px black;
+    background-color: cornflowerblue;
+    padding: 2vw;
+}
